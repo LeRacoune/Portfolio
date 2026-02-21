@@ -4,12 +4,23 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
 
-<section class="profile-section">
+<nav class="navbar" id="navbar">
+  <div class="nav-container wrap">
+    <div class="nav-brand">Belagha Hocine</div>
+    <ul class="nav-menu">
+      <li><a href="#presentation" class="nav-link">About</a></li>
+      <li><a href="#technologies" class="nav-link">Technologies</a></li>
+      <li><a href="#projets" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="profile-section" id="presentation">
   <div class="profile-inner wrap">
     <div class="intro">
       <h1>HEY<br>I'M HOCINE</h1>
@@ -17,7 +28,74 @@
         I am an administrative manager transitioning into a fullstack developer. <br>
         I am passionate about improving administrative tools, making them more practical and user-friendly for people with limited tech experience.
       </p>
-      <div class="contacts" aria-label="Coordonnées">
+    </div>
+    <div class="profile-right">
+      <img src="./static/image/head.png" alt="BigHeadWithRacoon" class="avatar">
+    </div>
+  </div>
+</section>
+
+<section class="technologies" id="technologies">
+  <div class="technologies-inner wrap">
+    <h2 class="section-title">Technologies & Skills</h2>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>Frontend</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <h3>Backend</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Go</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <h3>Tools</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Git</span>
+          <span class="tech-tag">GitHub</span>
+          <span class="tech-tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projets">
+  <div class="projects-inner wrap">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      <a href="https://github.com/IronBeagle404/groupie-tracker" class="card">
+        <h3>Groupie Tracker</h3>
+        <p>A Go web application that use a API to display and visualize artists, concerts, and relations data through an interactive and dynamic interface.</p>
+        <div class="tags">
+          <span class="tag">GO</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS</span>
+        </div>
+      </a>
+      <a href="https://github.com/LeRacoune/make-your-game" class="card">
+        <h3>Make Your Game</h3>
+        <p>A Space Invaders-style game using pure JavaScript, without any frameworks or canvas. The main goal is to build a smooth and optimized game that runs at 60 FPS, with no frame drops, using requestAnimationFrame.</p>
+        <div class="tags">
+          <span class="tag">JS</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner wrap">
+    <div class="footer-content">
+      <h2>Contact</h2>
+      <div class="contacts" aria-label="Contact information">
         <div class="contact-line">
           <img src="./static/image/email.png" alt="Email" class="icon-img">
           <span>HocineBelagha1@gmail.com</span>
@@ -32,33 +110,9 @@
         </div>
       </div>
     </div>
-    <div class="profile-right">
-      <img src="./static/image/head.png" alt="BigHeadWithRacoon" class="avatar">
-    </div>
   </div>
-</section>
+</footer>
 
-<section class="projects">
-  <div class="projects-inner wrap">
-    <a href="https://github.com/IronBeagle404/groupie-tracker" class="card">
-      <h3>Groupie Tracker</h3>
-      <p>A Go web application that use a API to display and visualize artists, concerts, and relations data through an interactive and dynamic interface.</p>
-      <div class="tags">
-        <span class="tag">GO</span>
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS</span>
-      </div>
-    </a>
-    <a href="https://github.com/LeRacoune/make-your-game" class="card">
-      <h3>Make Your Game</h3>
-      <p>A Space Invaders-style game using pure JavaScript, without any frameworks or canvas. The main goal is to build a smooth and optimized game that runs at 60 FPS, with no frame drops, using requestAnimationFrame.</p>
-      <div class="tags">
-        <span class="tag">JS</span>
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS</span>
-      </div>
-    </a>
-  </div>
-</section>
+<script src="script.js"></script>
 </body>
 </html>
